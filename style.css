@@ -1,0 +1,197 @@
+:root {
+    --bg-color: #f8f9fa;
+    --text-color: #212529;
+    --nav-bg: rgba(255, 255, 255, 0.95);
+    --card-bg: #ffffff;
+    --card-border: #e9ecef;
+    --card-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    --primary-gradient: linear-gradient(135deg, #8A2BE2 0%, #FFD700 100%);
+    --btn-text: #ffffff;
+    --accent-color: #8A2BE2;
+    --bs-secondary-color: #6c757d;
+}
+
+[data-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --nav-bg: rgba(18, 18, 18, 0.95);
+    --card-bg: #1e1e1e;
+    --card-border: #333333;
+    --card-box-shadow: 0 15px 30px rgba(255, 255, 255, 0.1);
+    --primary-gradient: linear-gradient(135deg, #6a1b9a 0%, #c4a000 100%);
+    --btn-text: #ffffff;
+    --accent-color: #FFD700;
+    --bs-secondary-color: #adb5bd;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    scroll-behavior: smooth;
+}
+
+.text-gradient {
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-muted,
+.text-body-secondary {
+    color: var(--bs-secondary-color);
+}
+
+.bg-gradient-custom {
+    background: var(--primary-gradient);
+    color: white !important;
+}
+
+.navbar {
+    background-color: var(--nav-bg);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand,
+.nav-link {
+    color: var(--text-color) !important;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color: var(--accent-color) !important;
+}
+
+#theme-toggle {
+    background: none;
+    border: 2px solid var(--text-color);
+    color: var(--text-color);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: auto !important;
+}
+
+#theme-toggle:hover {
+    background: var(--text-color);
+    color: var(--bg-color);
+}
+
+.hero {
+    padding: 120px 0 80px;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    background: var(--primary-gradient) border-box;
+    padding: 5px;
+}
+
+.btn-custom {
+    background: var(--primary-gradient);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-custom:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(138, 43, 226, 0.4);
+    color: white;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.section-title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--card-box-shadow);
+}
+
+.card-title,
+.card-text {
+    color: var(--text-color);
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.badge-skill {
+    background: var(--card-border);
+    color: var(--text-color);
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    border-radius: 20px;
+    margin: 5px;
+    font-weight: 500;
+}
+
+.project-logo {
+    width: 48px;
+    height: 48px;
+    display: block;
+    margin: 0 auto;
+}
+
+.github-btn:hover {
+    background-color: var(--text-color) !important;
+    color: var(--bg-color) !important;
+    border-color: var(--bg-color) !important;
+}
+
+.btn-outline-orange {
+    background-color: var(--bg-color) !important;
+    color: #FF5700 !important;
+    border-color: #FF5700 !important;
+}
+
+.btn-outline-orange:hover {
+    background-color: #FF5700 !important;
+    color: var(--bg-color) !important;
+    border-color: var(--bg-color) !important;
+}
+
+footer {
+    background-color: var(--card-bg);
+    border-top: 1px solid var(--card-border);
+    padding: 30px 0;
+    text-align: center;
+}
