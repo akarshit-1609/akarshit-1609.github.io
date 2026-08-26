@@ -189,6 +189,18 @@ section {
     border-color: var(--bg-color) !important;
 }
 
+.btn-outline-light-orange {
+    background-color: var(--bg-color) !important;
+    color: #FFA116 !important;
+    border-color: #FFA116 !important;
+}
+
+.btn-outline-light-orange:hover {
+    background-color: #FFA116 !important;
+    color: var(--bg-color) !important;
+    border-color: var(--bg-color) !important;
+}
+
 footer {
     background-color: var(--card-bg);
     border-top: 1px solid var(--card-border);
