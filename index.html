@@ -101,11 +101,24 @@
     </section>
 
     <section id="projects" style="background-color: var(--card-bg);">
-        <div class="container">
-            <h2 class="section-title text-center"><i class="fas fa-project-diagram"></i> GitHub Projects</h2>
-            <div class="row g-4 justify-content-center">
-                <script src="projects.js"></script>
+        <div class="projects-slider">
+            <button class="slider-arrow slider-prev" type="button" onclick="changeSlide(-1)">
+                &#10094;
+            </button>
+            <div class="container">
+                <h2 class="section-title text-center"><i class="fas fa-project-diagram"></i> GitHub Projects</h2>
+                <div class="slider-viewport">
+                    <div class="slider-track" id="sliderTrack">
+                        <div class="row g-4 justify-content-center">
+                            <script src="projects.js"></script>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <button class="slider-arrow slider-next" type="button" onclick="changeSlide(1)">
+                &#10095;
+            </button>
+            <div class="slider-dots" id="sliderDots"></div>
         </div>
     </section>
 
